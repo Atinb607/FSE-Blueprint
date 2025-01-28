@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Blueprint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">E-Shop</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#cart">Cart</a></li>
+                        <li><a href="#account">Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-item" style="background-color: #ff6b6b;">Slide 1: New Arrivals</div>
+        <div class="carousel-item" style="background-color: #4ecdc4;">Slide 2: Summer Sale</div>
+        <div class="carousel-item" style="background-color: #45b7d1;">Slide 3: Best Sellers</div>
+    </section>
+
+    <section class="promotions">
+        <div class="container">
+            <h2>Special Promotions</h2>
+            <div class="promotion-grid">
+                <div class="promotion-item">
+                    <h3>Summer Clearance</h3>
+                    <p>Up to 50% off on selected items</p>
+                </div>
+                <div class="promotion-item">
+                    <h3>Free Shipping</h3>
+                    <p>On orders over $50</p>
+                </div>
+                <div class="promotion-item">
+                    <h3>New Customer Discount</h3>
+                    <p>Get 10% off your first order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Filters</h2>
+            <form id="filter-form">
+                <div>
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="price-range">Price Range:</label>
+                    <input type="range" id="price-range" min="0" max="1000" step="10" value="500">
+                    <span id="price-display">$500</span>
+                </div>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
+
+        <section class="product-grid" id="product-grid">
+            <!-- Product cards will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <section class="ads">
+        <div class="container">
+            <h2>Featured Ads</h2>
+            <div class="ad-banner">
+                <h3>Limited Time Offer!</h3>
+                <p>Get an extra 15% off when you use code SUMMER15 at checkout</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 E-Commerce Blueprint. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
